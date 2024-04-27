@@ -35,6 +35,12 @@ nav ul li a{
 
 /*Classes*/
 
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
 .homePage {
     width: 30%;
     min-width: min-content;
@@ -74,7 +80,22 @@ nav ul li a{
     line-height: 50%;
 }
 
+.underline{
+    text-decoration: underline solid black;
+}
+
 /*IDs*/
+
+#details {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url('../images/venue.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #home {
     background-image: url('../images/background_image.jpg');
     background-position: top center;
