@@ -3,9 +3,15 @@ body {
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 nav {
     padding: 3px 0 3px 0;
     background-color: #FFFDD0;
+    position: fixed;
+    width: 100%;
 }
 
 nav ul {
@@ -53,10 +59,44 @@ nav ul li a{
     max-height: 100vh;
 }
 
+.story{
+    padding: 0 25% 0 25%;
+}
+
+.story h3 {
+    padding: 1rem 0 0.5rem 0;
+}
+
+.storyFirstWord{
+    font-size: 250%;
+    font-weight: 10;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    line-height: 50%;
+}
+
 /*IDs*/
 #home {
     background-image: url('../images/background_image.jpg');
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#story{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*media query*/
+@media only screen and (max-width: 600px){
+    .story{
+        padding: 3vh 10% 0 10%;
+        line-height: 100%;
+    }
+
+    .story h3 {
+        padding: 0.5rem 0 0.5rem 0;
+        font-size: 90%;
+    }
 }
