@@ -20,6 +20,7 @@ nav {
     background-color: #FFFDD0;
     position: fixed;
     width: 100%;
+    z-index: 2;
 }
 
 nav ul {
@@ -54,6 +55,8 @@ nav ul li a{
 }
 
 .homePage {
+    position: relative;
+    top: 250px;
     width: 30%;
     min-width: min-content;
     padding-left: 3%;
@@ -64,7 +67,6 @@ nav ul li a{
     font-family: Brush Script MT, Brush Script Std, cursive;
     font-size: 6rem;
     font-weight: 10;
-    padding-top: 12rem;
     line-height: 5rem;
 }
 
@@ -113,6 +115,7 @@ nav ul li a{
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 #rsvp{
@@ -143,6 +146,7 @@ nav ul li a{
 
 #story{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
