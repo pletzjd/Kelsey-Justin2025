@@ -50,6 +50,11 @@ nav ul li a{
     gap: 3rem;
 }
 
+.fancy{
+    font-size: 200%;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
 .formEle{
     padding:0 1.5rem 1.5rem 1.5rem;
 }
@@ -100,6 +105,24 @@ nav ul li a{
 
 /*IDs*/
 
+#bridesmaides, #groomsmen{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    align-items: center;
+    padding: 0 20% 0 20%;
+}
+
+#bridesmaides div, #groomsmen div{
+    text-align: center;
+}
+
+#bridesmaides img, #groomsmen img{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+
 #details {
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url('../images/venue.jpg');
     background-position: top center;
@@ -110,12 +133,26 @@ nav ul li a{
     justify-content: center;
 }
 
+#groomsmen{
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+}
+
 #home {
     background-image: url('../images/background_image.jpg');
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+
+#party{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 35px;
 }
 
 #rsvp{
