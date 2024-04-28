@@ -115,6 +115,7 @@ nav ul li a{
 
 #bridesmaides div, #groomsmen div{
     text-align: center;
+    padding-bottom: 5%;
 }
 
 #bridesmaides img, #groomsmen img{
@@ -151,7 +152,7 @@ nav ul li a{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 50px;
+    gap: 35px;
     padding-top: 35px;
 }
 
@@ -199,5 +200,13 @@ nav ul li a{
     .story h3 {
         padding: 0.5rem 0 0.5rem 0;
         font-size: 90%;
+    }
+}
+
+@media only screen and (min-width: 850px){
+    #bridesmaides img, #groomsmen img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
     }
 }
